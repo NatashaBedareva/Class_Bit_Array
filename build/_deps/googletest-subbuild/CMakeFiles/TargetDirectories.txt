@@ -1,0 +1,3 @@
+C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir

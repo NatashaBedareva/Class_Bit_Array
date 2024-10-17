@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/26820b8e2d30fc32e2eeac2a4cbade62/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/f5fd5e1556b56edf4c3cd9e7052d0a99/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/build/_deps/googletest-subbuild/CMakeFiles/4e26fd2bb17a67c26eee53953e184b85/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

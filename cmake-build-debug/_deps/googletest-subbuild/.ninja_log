@@ -1,0 +1,21 @@
+# ninja log v5
+1	94	7508850252044815	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	8363b9bdd1e9cd52
+1	94	7508850252044815	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	8363b9bdd1e9cd52
+94	4533	7508850296403150	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	5ecaef940b480a67
+94	4533	7508850296403150	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	5ecaef940b480a67
+4534	4720	7508850298297573	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	cc3deb1a4bef0448
+4534	4720	7508850298297573	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	cc3deb1a4bef0448
+4720	4817	7508850299268092	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7c933016f6b27ceb
+4720	4817	7508850299268092	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	7c933016f6b27ceb
+4817	4981	7508850300877559	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	77aef2909b1b862f
+4817	4981	7508850300877559	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	77aef2909b1b862f
+4982	5100	7508850302088256	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	af1baa0487ef191a
+4982	5100	7508850302088256	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	af1baa0487ef191a
+5101	5306	7508850304177927	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	62468630c47abddd
+5101	5306	7508850304177927	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	62468630c47abddd
+5306	5374	7508850304837995	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	c7f558e04267e2ff
+5306	5374	7508850304837995	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	c7f558e04267e2ff
+5374	5528	7508850306352187	CMakeFiles/googletest-populate-complete	c5b57af4f4e31cf8
+5374	5528	7508850306352187	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	c5b57af4f4e31cf8
+5374	5528	7508850306352187	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	c5b57af4f4e31cf8
+5374	5528	7508850306352187	C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	c5b57af4f4e31cf8
