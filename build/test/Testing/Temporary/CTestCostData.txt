@@ -1,1 +1,11 @@
+TestBitsArray.TestSwap 9 0.000677644
+TestBitsArray.TestResize 6 0.00107825
+TestBitsArray.TestPushBack 6 0.00114618
+TestBitsArray.TestSet 5 0.00121392
+TestBitsArray.TestReset 6 0.000844383
+TestBitsArray.TestAnyNone 7 0.000756243
+TestBitsArray.TestCount 4 0.00130117
+TestBitsArray.TestEmptyClear 4 0.00138098
+TestBitsArray.TestIndex 4 0.0013388
+TestBitsArray.TestOperatorBit 3 0.00176273
 ---
