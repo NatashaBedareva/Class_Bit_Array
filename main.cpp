@@ -4,7 +4,7 @@
 
 class BitArray
 {
-    std::vector<unsigned long> bits_vector; // Вектор для хранения битов
+    std::vector<unsigned long> bits_vector; // Vector for storing bits
     int size_vector;
 public:
 
@@ -17,8 +17,7 @@ public:
       size_vector = 0;
   }
 
-  //Конструирует массив, хранящий заданное количество бит.
-  //Первые sizeof(long) бит можно инициализровать с помощью параметра value.
+  //Constructs an array storing a specified number of bits.
   explicit BitArray(int num_bits, unsigned long value = 0)
   {
       if(num_bits>32)
@@ -36,7 +35,7 @@ public:
   }
 
 
-  //Обменивает значения двух битовых массивов.
+  //Exchanges the values of two bit arrays.
   void swap(BitArray& b)
   {
       std::swap(size_vector,b.size_vector);
@@ -53,8 +52,8 @@ public:
   }
 
 
-  //Изменяет размер массива. В случае расширения, новые элементы
-  //инициализируются значением value.
+    //Changes the size of the array. In case of expansion, new elements
+    //are initialized with the value value.
   void resize(int num_bits, bool value = false)
   {
       if (!(int(size_vector/32)<=int((num_bits)/32) && int(num_bits/32)<(int(size_vector/32)+1)))
@@ -65,14 +64,14 @@ public:
       }
       size_vector=num_bits;
   }
-  //Очищает массив.
+  //Cleaning masiv
   void clear()
   {
       bits_vector.clear();
       size_vector = 0;
   }
-  //Добавляет новый бит в конец массива. В случае необходимости
-  //происходит перераспределение памяти.
+    //Adds a new bit to the end of the array. If necessary
+    //memory is being redistributed.
   void push_back(bool bit)
   {
       if ( size_vector/32 <  ((size_vector+1)/32) )
@@ -83,9 +82,9 @@ public:
   }
 
 
-  //Битовые операции над массивами.
-  //Работают только на массивах одинакового размера.
-  //Обоснование реакции на параметр неверного размера входит в задачу.
+    //Bit operations on arrays.
+    //Only work on arrays of the same size.
+
   BitArray& operator&=(const BitArray& b) {
       if (size_vector != b.size_vector) {
           throw std::invalid_argument("Sizes of BitArray must be the same.");
@@ -101,7 +100,6 @@ public:
 
   BitArray& operator|=(const BitArray& b)
   {
-      // Проверка на совпадение размеров
       if (size_vector != b.size_vector) {
           throw std::invalid_argument("Sizes of BitArray must be the same.");
       }
@@ -120,7 +118,6 @@ public:
   }
   BitArray& operator^=(const BitArray& b)
   {
-      // Проверка на совпадение размеров
       if (size_vector != b.size_vector) {
           throw std::invalid_argument("Sizes of BitArray must be the same.");
       }
@@ -138,7 +135,7 @@ public:
       return *this;
   }
 
-  //Битовый сдвиг с заполнением нулями.
+  //A zero-filled bit shift.
   BitArray& operator<<=(int n)
   {
       bool f=false;
@@ -232,7 +229,7 @@ public:
   }
 
 
-  //Устанавливает бит с индексом n в значение val.
+  //Sets the bit with index n to val.
   BitArray& set(int n, bool val = true)
   {
       int id = int(n/32);
@@ -242,7 +239,7 @@ public:
       return *this;
   }
 
-  //Заполняет массив истиной.
+    //Fills the array with the truth.
   BitArray& set()
   {
       for(int i=0;i<=size_vector/32;i++)
@@ -253,14 +250,14 @@ public:
   }
 
 
-  //Устанавливает бит с индексом n в значение false.
+    //Sets the bit with index n to false.
   BitArray& reset(int n)
   {
       int id = int(n/32);
       bits_vector[id] = bits_vector[id]  &= ~(1 << (n-id*32));
       return *this;
   }
-  //Заполняет массив ложью.
+    //Fills the array with a lie.
   BitArray& reset()
   {
       for(int i=0;i<=size_vector/32;i++)
@@ -270,7 +267,7 @@ public:
       return *this;
   }
 
-  //true, если массив содержит истинный бит.
+    //true if the array contains a true bit.
   bool any() const
   {
       for(int i=0; i<size_vector;i++)
@@ -282,14 +279,14 @@ public:
       }
       return false;
   }
-  //true, если все биты массива ложны.
+//true if all the bits of the array are false.
   bool none() const
   {
       if (any())
           return false;
       return true;
   }
-  //Битовая инверсия
+//Bit inversion
   BitArray operator~() const
   {
       BitArray new_arr{this->size_vector};
@@ -304,7 +301,7 @@ public:
       }
       return new_arr;
   }
-  //Подсчитывает количество единичных бит.
+//Counts the number of single bits.
   int count() const
   {
       int count=0;
@@ -319,7 +316,7 @@ public:
   }
 
 
-  //Возвращает значение бита по индексу i.
+//Returns the value of the bit at index i.
   bool operator[](int i) const
   {
       unsigned long N = bits_vector[i/32];
@@ -336,7 +333,7 @@ public:
         return ((size_vector==0) ? true : false);
   }
 
-  //Возвращает строковое представление массива.
+//Returns the string representation of the array.
   std::string to_string() const
   {
       std::string str="";
