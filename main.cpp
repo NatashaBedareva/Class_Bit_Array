@@ -7,6 +7,7 @@ class BitArray
     std::vector<unsigned long> bits_vector; // Вектор для хранения битов
     int size_vector;
 public:
+
   BitArray()
   {
     size_vector=0;
@@ -138,10 +139,97 @@ public:
   }
 
   //Битовый сдвиг с заполнением нулями.
-  BitArray& operator<<=(int n);
-  BitArray& operator>>=(int n);
-  BitArray operator<<(int n) const;
-  BitArray operator>>(int n) const;
+  BitArray& operator<<=(int n)
+  {
+      bool f=false;
+      int g=0;
+      for(int i=0;i<n;i++)
+      {
+          for(int j=0;j<=size_vector/32;j++)
+          {
+              unsigned long gran_bit = bits_vector[j] & 2147483648;
+              BitArray nnn{size_vector,gran_bit};
+              if (nnn.any() && (j+1)<=size_vector)
+              {
+                  f=true;
+                  g=j;
+              }
+              bits_vector[j] = bits_vector[j]<<1;
+              if (f && (g+1)==j)
+              {
+                  bits_vector[j] |=1;
+                  f=false;
+              }
+          }
+
+      }
+      return *this;
+  }
+
+  BitArray& operator>>=(int n)
+  {
+      for(int i=0;i<n;i++)
+      {
+          for(int j=0;j<=size_vector/32;j++)
+          {
+              unsigned long gran_bit = bits_vector[j] & 1;
+              BitArray nnn{size_vector,gran_bit};
+              if (nnn.any() && (j-1)<=size_vector && j-1>=0)
+              {
+                  bits_vector[j-1] |=2147483648;
+              }
+              bits_vector[j] = bits_vector[j]>>1;
+          }
+      }
+      return *this;
+  }
+  BitArray operator<<(int n) const
+  {
+      BitArray new_arr;
+      new_arr=*this;
+      bool f=false;
+      int g=0;
+      for(int i=0;i<n;i++)
+      {
+          for(int j=0;j<=new_arr.size_vector/32;j++)
+          {
+              unsigned long gran_bit = new_arr.bits_vector[j] & 2147483648;
+              BitArray nnn{new_arr.size_vector,gran_bit};
+              if (nnn.any() && (j+1)<=new_arr.size_vector)
+              {
+                  f=true;
+                  g=j;
+              }
+              new_arr.bits_vector[j] = new_arr.bits_vector[j]<<1;
+              if (f && (g+1)==j)
+              {
+                  new_arr.bits_vector[j] |=1;
+                  f=false;
+              }
+          }
+
+      }
+      return new_arr;
+  }
+  BitArray operator>>(int n) const
+  {
+      BitArray new_arr;
+      new_arr=*this;
+      for(int i=0;i<n;i++)
+      {
+          for(int j=0;j<=new_arr.size_vector/32;j++)
+          {
+              unsigned long gran_bit = new_arr.bits_vector[j] & 1;
+              BitArray nnn{new_arr.size_vector,gran_bit};
+              if (nnn.any() && (j-1)<=new_arr.size_vector && j-1>=0)
+              {
+                  new_arr.bits_vector[j-1] |=2147483648;
+              }
+              new_arr.bits_vector[j] = new_arr.bits_vector[j]>>1;
+          }
+      }
+      return new_arr;
+  }
 
 
   //Устанавливает бит с индексом n в значение val.
@@ -307,8 +395,17 @@ BitArray operator^(const BitArray& b1, const BitArray& b2)
 
 
 int main() {
-    BitArray d{35,500};
+    BitArray d{35};
+
     //d.resize(10);
+
+    d.set(2);
+    d.set(3);
+    d.set(5);
+    d.set(20);
+    d.set(25);
+    d.set(31);
+    d.set(32);
 
 /*
     d.set(5);
@@ -374,6 +471,10 @@ int main() {
     std::cout<<d3.to_string()<<"\n";
     std::cout<<(d4 ^ d3).to_string()<<"\n";
     */
+
+    std::cout<<d.to_string()<<"\n";
+    d>>=1;
+    std::cout<<d.to_string()<<"\n";
 
     return 0;
 }
