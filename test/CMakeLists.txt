@@ -7,8 +7,10 @@ FetchContent_Declare(googletest
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(test_main_app test_main.cpp) # to run tests
+
+add_executable(test_main_app test_main.cpp BittArray_test.cpp BittArray_test.h) # to run tests
 target_link_libraries(test_main_app PRIVATE GTest::gtest_main)
+# подключить как библиотеку bit array
 include(GoogleTest)
 gtest_discover_tests(test_main_app)
 

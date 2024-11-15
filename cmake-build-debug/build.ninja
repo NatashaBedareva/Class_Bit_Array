@@ -55,6 +55,12 @@ build CMakeFiles/Bit_Array.dir/main.cpp.obj: CXX_COMPILER__Bit_Array_Debug C$:/U
   OBJECT_DIR = CMakeFiles\Bit_Array.dir
   OBJECT_FILE_DIR = CMakeFiles\Bit_Array.dir
 
+build CMakeFiles/Bit_Array.dir/BittArray.cpp.obj: CXX_COMPILER__Bit_Array_Debug C$:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/BittArray.cpp || cmake_object_order_depends_target_Bit_Array
+  DEP_FILE = CMakeFiles\Bit_Array.dir\BittArray.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Bit_Array.dir
+  OBJECT_FILE_DIR = CMakeFiles\Bit_Array.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Bit_Array
@@ -63,7 +69,7 @@ build CMakeFiles/Bit_Array.dir/main.cpp.obj: CXX_COMPILER__Bit_Array_Debug C$:/U
 #############################################
 # Link the executable Bit_Array.exe
 
-build Bit_Array.exe: CXX_EXECUTABLE_LINKER__Bit_Array_Debug CMakeFiles/Bit_Array.dir/main.cpp.obj
+build Bit_Array.exe: CXX_EXECUTABLE_LINKER__Bit_Array_Debug CMakeFiles/Bit_Array.dir/main.cpp.obj CMakeFiles/Bit_Array.dir/BittArray.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Bit_Array.dir
@@ -171,6 +177,13 @@ build test/CMakeFiles/test_main_app.dir/test_main.cpp.obj: CXX_COMPILER__test_ma
   OBJECT_DIR = test\CMakeFiles\test_main_app.dir
   OBJECT_FILE_DIR = test\CMakeFiles\test_main_app.dir
 
+build test/CMakeFiles/test_main_app.dir/BittArray_test.cpp.obj: CXX_COMPILER__test_main_app_Debug C$:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/test/BittArray_test.cpp || cmake_object_order_depends_target_test_main_app
+  DEP_FILE = test\CMakeFiles\test_main_app.dir\BittArray_test.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -isystem C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = test\CMakeFiles\test_main_app.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\test_main_app.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target test_main_app
@@ -179,7 +192,7 @@ build test/CMakeFiles/test_main_app.dir/test_main.cpp.obj: CXX_COMPILER__test_ma
 #############################################
 # Link the executable test\test_main_app.exe
 
-build test/test_main_app.exe test/test_main_app[1]_tests.cmake | ${cmake_ninja_workdir}test/test_main_app[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_main_app_Debug test/CMakeFiles/test_main_app.dir/test_main.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build test/test_main_app.exe test/test_main_app[1]_tests.cmake | ${cmake_ninja_workdir}test/test_main_app[1]_tests.cmake: CXX_EXECUTABLE_LINKER__test_main_app_Debug test/CMakeFiles/test_main_app.dir/test_main.cpp.obj test/CMakeFiles/test_main_app.dir/BittArray_test.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = test\CMakeFiles\test_main_app.dir

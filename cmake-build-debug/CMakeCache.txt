@@ -173,7 +173,7 @@ CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/ninja/win/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -307,6 +307,9 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/str
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Configure for GoogleTest
+ENABLE_TEST:BOOL=ON
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=C:/Users/Bedareva/Documents/STADING_NGU/OOP/Bit_Array/cmake-build-debug/_deps
