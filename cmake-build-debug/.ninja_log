@@ -1,6 +1,0 @@
-# ninja log v5
-3	288	7533956856142176	CMakeFiles/Bit_Array.dir/main.cpp.obj	6acc5e30f8baa681
-288	419	7533956857392282	Bit_Array.exe	ce592e080dca2272
-1	302	7533969182350648	build.ninja	10bedb34c171b9ed
-2	269	7533859670677313	CMakeFiles/Bit_Array.dir/bitArr.cpp.obj	2f2982fa2f77ca17
-9	646	7533956593107904	CMakeFiles/Bit_Array.dir/BittArray.cpp.obj	a27f1b153ff0ebab
